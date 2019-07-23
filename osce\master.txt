@@ -1,0 +1,13 @@
+# Stored procedure
+% i.e .osp_cb_dbSetClietnNotConnectedTime - parameter GUID and Time
+
+# Database SQL Scritps
+# Get the databases of a host
+select [name],[dbid] from [master].[dbo].[sysdatabase] order by [name]
+# List all cients from listing only name and guid
+SELECT uid, comp_name from dbo.TBL_CLIENT_INFO;
+# List a specific client in teh DB via GUID
+SELECT * from dbo.TBL_CLIENT_INFO where uid like '%57991%';
+
+
+A1-PC1...42AF92C9-BAFC-4FFE-B330-7A24456F49F8
